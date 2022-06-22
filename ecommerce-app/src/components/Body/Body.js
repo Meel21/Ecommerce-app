@@ -1,5 +1,5 @@
 import './Body.css';
-import Card from './Card';
+import Card from '../Card/Card';
 
 function Body (){
 return (
