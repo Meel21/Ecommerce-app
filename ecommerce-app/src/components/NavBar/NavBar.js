@@ -10,11 +10,13 @@ function NavBar() {
       <p className="logo">CLOTHING</p>
       <nav>
         <ul>
-        <a href="#" src='#'>Inicio</a>
-        <a href="#" src='#'>Nosotros</a>
-        <a href="#" src="#">Tienda</a>
+        <a className='nav-ul' href="#" src='#'>Inicio</a>
+        <a className='nav-ul' href="#" src='#'>Nosotros</a>
+        <a className='nav-ul' href="#" src="#">Tienda</a>
         </ul>
-        <CartWidget />
+        <div> 
+          <CartWidget />
+        </div>
         </nav>
     </header>
   );
