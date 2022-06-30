@@ -1,16 +1,31 @@
-import './Body.css';
-import Card from '../Card/Card';
+// import {useEffect,useState} from 'react'
+// import './Body.css';
+// import Card from '../Card/Card';
 
-function Body (){
-return (
-    <div className='cuerpo'>
-        <Card product="mesa" price="300"/>
-        <Card product="mesa" price="300" img=""/>
-        <Card/> 
+// function Body (){
 
-    </div>
+//     const [info,setInfo] =useState ([])
 
-)
 
-}
-export default Body;
+// useEffect (() => {
+
+//         fetch ('data.json')
+//         .then((resp)=> resp.json ())
+//         .then ((data) => setInfo (data) )
+
+//     }, [])
+// return (
+//     <section className='cuerpo'>
+//         <div>
+//             <h1> Selecciona tus productos</h1>
+//         </div>
+//     <div className='catalogo'>
+//         {info && info.map (i => <Card product={i.nombre} price= {i.precio}/>)}
+//     </div>
+
+//     </section>
+
+// )
+
+// }
+// export default Body;

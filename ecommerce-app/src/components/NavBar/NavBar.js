@@ -1,6 +1,7 @@
 
 import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css';
+import {Link} from 'react-router-dom'
 
 
 
@@ -10,9 +11,9 @@ function NavBar() {
       <p className="logo">CLOTHING</p>
       <nav>
         <ul>
-        <a className='nav-ul' href="#" src='#'>Inicio</a>
-        <a className='nav-ul' href="#" src='#'>Nosotros</a>
-        <a className='nav-ul' href="#" src="#">Tienda</a>
+        <NavLink activeClassName='active' className='nav-ul' to="/Inicio" src='#'>Inicio</NavLink>
+        <NavLink activeClassName='active' className='nav-ul' to="/Nosotros" src='#'>Nosotros</NavLink>
+        <NavLink activeClassName='active' className='nav-ul' to="/Tienda" src="#">Tienda</NavLink>
         </ul>
         <div> 
           <CartWidget />

@@ -7,13 +7,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemCount from './components/ItemCount/ItemCount';
 
 
+
 function App() {
   return (
     <div>
      <NavBar/>
      <ItemListContainer texto ='Catalogo de Productos'/>
      <Welcome name="Melina" />
-     <Body/>
      <ItemCount stock={8}/>
     </div>  
   );
