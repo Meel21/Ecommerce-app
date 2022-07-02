@@ -1,30 +1,16 @@
-import {useEffect,useState} from 'react'
-import Item from '../Item/Item';
+import React from 'react'
+import Item from '../Item/Item'
 
-function ItemList (){
+export const ItemList = ({listProducts}) => {
 
-    const [info,setInfo] =useState ([])
+console.log= ('listProducts',listProducts)
 
-
-useEffect (() => {
-
-        fetch ('data.json')
-        .then((resp)=> resp.json ())
-        .then ((data) => setInfo (data))
-
-    }, [])
 return (
-    <section className='cuerpo'>
-        <div>
-            <h1> Selecciona tus productos</h1>
-        </div>
-    <div className='catalogo'>
-        {info && info.map (i => <Item product={i.nombre} price= {i.precio}/>)}
+ <div className='container'>
+    <div className='row justify-content-evely'>
+        {listProducts.map ((oneProduct) => <Item key={oneProduct.id} nombre={oneProduct.nombre} img={oneProduct.img} price={oneProduct.precio} />)}
     </div>
-
-    </section>
+ </div>
 
 )
-
 }
-export default ItemList;

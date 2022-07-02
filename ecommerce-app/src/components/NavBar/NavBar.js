@@ -11,9 +11,9 @@ function NavBar() {
       <p className="logo">CLOTHING</p>
       <nav>
         <ul>
-        <NavLink activeClassName='active' className='nav-ul' to="/Inicio" src='#'>Inicio</NavLink>
-        <NavLink activeClassName='active' className='nav-ul' to="/Nosotros" src='#'>Nosotros</NavLink>
-        <NavLink activeClassName='active' className='nav-ul' to="/Tienda" src="#">Tienda</NavLink>
+        <a activeClassName='active' className='nav-ul' to="/Inicio" src='#'>Inicio</a>
+        <a activeClassName='active' className='nav-ul' to="/Nosotros" src='#'>Nosotros</a>
+        <a activeClassName='active' className='nav-ul' to="/Tienda" src="#">Tienda</a>
         </ul>
         <div> 
           <CartWidget />
