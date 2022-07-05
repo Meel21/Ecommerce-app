@@ -6,12 +6,13 @@ export const listProducts=[
     "descuento": 0.8,
     "categoria": "Madera",
     "id": 1,
-    "img":"/assets/pantalon.jpg"
+    "img":""
 
 
 },
 
 {
+
 
 "nombre":"Pantalones",
 "stock": 10,
@@ -19,7 +20,7 @@ export const listProducts=[
 "descuento": 0.8,
 "categoria": "Madera",
 "id": 1,
-"img":"https://www.zara.com/ar/es/leather-pant-unit-02-p03461286.html?v1=144646287&v2=2128987"
+"img":""
     
     },
 
