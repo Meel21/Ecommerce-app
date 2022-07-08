@@ -3,6 +3,7 @@ import './ItemDetail.css'
 
 export const ItemDetail = ({data}) => {
  return (
+
     <div className='movie'>
     <div className = "detail">
         <h3>{data.title}</h3>

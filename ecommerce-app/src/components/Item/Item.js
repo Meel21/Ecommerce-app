@@ -5,7 +5,7 @@ function Item ({data}){
         <div className='card'>
             <h4>{data.product}</h4>
             <div>
-            <img src={data.image} alt= {data.nombre} />
+            <img className= 'products-img'src={data.image} alt= {data.nombre} />
             </div>
             <div className='card-body'>
                 <h5> {data.nombre}</h5>
