@@ -1,8 +1,8 @@
 import {useEffect,useState} from 'react';
-import { ItemList } from '../ItemList/ItemList';
 import {useParams} from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount';
 import Title from '../Title';
+import  ItemList  from '../ItemList/ItemList';
 
 const product = [
 
@@ -39,7 +39,7 @@ const product = [
 
 ]
 
-export const ItemListContainer = ({greetings}) => {
+const ItemListContainer = ({greetings}) => {
 const [info,setInfo ]=useState ([]);
 
 const {categoriaId}= useParams();

@@ -1,15 +1,15 @@
 import './Item.css'
 
-function Item ({product,nombre,price,img}){
+function Item ({data}){
     return (
         <div className='card'>
-            <h4>{product}</h4>
+            <h4>{data.product}</h4>
             <div>
-            <img src={img} alt= {nombre} />
+            <img src={data.img} alt= {data.nombre} />
             </div>
             <div className='card-body'>
-                <h5> {nombre}</h5>
-            <p>{price}</p>
+                <h5> {data.nombre}</h5>
+            <p>{data.price}</p>
             <button>Ver detalle de producto</button>
             </div>
           
