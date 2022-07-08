@@ -11,14 +11,15 @@ const product = [
         image: "https://picsum.photos/id/237/200/300",
         title:"Remera Marley",
         description: 'Suave tela de algodon',
-        
+        precio:20000
         },
         {
             id: 1,
             image: "https://picsum.photos/id/237/200/300",
             title:"Remera Marley",
             description: 'Suave tela de algodon',
-            categoria:'hombre'
+            categoria:'hombre',
+            precio:100000
             
             },
             {
@@ -26,7 +27,8 @@ const product = [
                 image: "https://picsum.photos/id/237/200/300",
                 title:"Remera Marley",
                 description: 'Suave tela de algodon',
-                categoria:'mujer'
+                categoria:'mujer',
+                precio: 200000,
                 
                 },
                 {
@@ -34,7 +36,7 @@ const product = [
                     image: "https://picsum.photos/id/237/200/300",
                     title:"Remera Marley",
                     description: 'Suave tela de algodon',
-                    
+                    precio:30000
                     }
 
 ]
