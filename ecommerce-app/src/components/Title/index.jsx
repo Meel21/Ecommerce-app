@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Title = ({greeting}) => {
+export const Title = ({texto}) => {
   
     return (
-        <h1> {greeting} </h1>
+        <h1> {texto} </h1>
     );
 }
 export default Title;

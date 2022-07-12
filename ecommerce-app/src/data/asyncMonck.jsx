@@ -1,4 +1,4 @@
-export const listProducts=[
+export const listProducts =[
 {
     "nombre":"Pantalones",
     "stock": 10,

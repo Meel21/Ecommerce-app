@@ -8,12 +8,12 @@ import {NavLink} from 'react-router-dom'
 function NavBar() {
   return (
     <header className='navbar'>
-      <p className="logo" to='/'>CLOTHING</p>
+      <NavLink className="logo" to='/'>CLOTHING</NavLink>
       <nav>
         <ul>
-        <NavLink  className='nav-ul' to="/categoria/mujer">Mujer</NavLink>
-        <NavLink  className='nav-ul' to="/categoria/hombres">Hombres</NavLink>
-        <NavLink  className='nav-ul' to="/categoria/niños">Niños</NavLink>
+        <NavLink  className='nav-ul' to="/categoria/mujer" href='#'>Mujer</NavLink>
+        <NavLink  className='nav-ul' to="/categoria/hombres" href='#'>Hombres</NavLink>
+        <NavLink  className='nav-ul' to="/categoria/niños" href='#'>Niños</NavLink>
         </ul>
         <div> 
           <NavLink className='nav_link' to='cart'>

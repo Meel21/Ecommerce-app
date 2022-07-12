@@ -5,12 +5,12 @@ import React , {useState,useEffect} from 'react'
 
 const product = {
 id: 1,
-image: "https://picsum.photos/id/237/200/300",
+image: "http://http2.mlstatic.com/D_NQ_NP_123-MLA456_112021-O.jpg",
 title:"Remera Marley",
 description: 'Suave tela de algodon',
 
 }
-function ItemDetailContainer (){
+export const ItemDetailContainer = () =>{
     const [data,setData] = useState ({});
     useEffect (() => {
         const getData = new Promise (resolve =>{

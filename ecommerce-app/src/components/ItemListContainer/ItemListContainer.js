@@ -1,6 +1,5 @@
 import {useEffect,useState} from 'react';
 import {useParams} from 'react-router-dom'
-import ItemCount from '../ItemCount/ItemCount';
 import Title from '../Title';
 import  ItemList  from '../ItemList/ItemList';
 
@@ -41,7 +40,7 @@ const product = [
 
 ]
 
-const ItemListContainer = ({greetings}) => {
+const ItemListContainer = ({texto}) => {
 const [info,setInfo ]=useState ([]);
 
 const {categoriaId}= useParams();
@@ -57,7 +56,7 @@ const getInfo = new Promise (resolve => {
     });
     if (categoriaId){
 
-    getInfo.then (res => setInfo(res.filter (product => product.categoria === categoriaId)));
+    getInfo.then (res => setInfo(res.filter ((product) => product.categoria === categoriaId)));
    
    } else {
     getInfo.then (res => setInfo (res));
@@ -66,14 +65,10 @@ const getInfo = new Promise (resolve => {
 },[categoriaId])
 
 
-const onAdd = (quantity) => {
-    console.log (`compraste ${quantity} unidades`)
-}
 
 return (
 <>
- <Title greeting={greetings} />
- <ItemCount initial= {4} stock= {8} onAdd={onAdd} />
+ <Title texto={texto} />
  <ItemList info = {info}/>
 
 
