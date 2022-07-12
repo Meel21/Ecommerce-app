@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 
  export const ItemDetail = ({data}) => {
 
-    const [goCart,setCart] =useState (false)
+    const [goToCart,setGoToCart] =useState (false);
     
     const onAdd = (quantity) => {
+     
       
-      setCart (true)
+      setGoToCart (true);
     }
     
  return (
@@ -21,9 +22,9 @@ import { Link } from 'react-router-dom';
         <h3>{data.title}</h3>
         <p> {data.description}</p>
         {
-            goCart
+            goToCart
             ? <Link to='/cart'> Terminar compra </Link>
-            : <ItemCount initial= {4} stock= {8} onAdd={onAdd} />
+            :<ItemCount initial= {4} stock= {8} onAdd={onAdd} />
 
         }
 

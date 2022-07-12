@@ -9,38 +9,40 @@ const product = [
         id: 1,
         image: "https://picsum.photos/id/237/200/300",
         title:"Remera Marley",
+        categoria:'mujer',
         description: 'Suave tela de algodon',
         precio:20000
         },
         {
-            id: 1,
+            id: 2,
             image: "https://picsum.photos/id/237/200/300",
-            title:"Remera Marley",
+            title:"Remera Fantasmic",
             description: 'Suave tela de algodon',
-            categoria:'hombre',
+            categoria:'hombres',
             precio:100000
             
             },
             {
-                id: 1,
+                id: 3,
                 image: "https://picsum.photos/id/237/200/300",
-                title:"Remera Marley",
+                title:"Pollera pails",
                 description: 'Suave tela de algodon',
                 categoria:'mujer',
                 precio: 200000,
                 
                 },
                 {
-                    id: 1,
+                    id: 4,
                     image: "https://picsum.photos/id/237/200/300",
-                    title:"Remera Marley",
+                    title:"Jean monster inc",
                     description: 'Suave tela de algodon',
+                    categoria:'niños',
                     precio:30000
                     }
 
 ]
 
-const ItemListContainer = ({texto}) => {
+export const ItemListContainer = ({texto}) => {
 const [info,setInfo ]=useState ([]);
 
 const {categoriaId}= useParams();
@@ -79,54 +81,5 @@ return (
     
 }
     
-    
-    
-    
-
-
-
-
-
-
-// const getInfo = () => {
-
-//     return new Promise ((resolve,reject) => {
-
-//         setTimeout(() => {
-
-//             listProducts.length > 0 ?
-//             resolve (listProducts)
-//             :
-//             reject ("No hay datos")
-            
-//         }, 2000);
-//     }
-//     )
-// }
-// if (categoriaId){
-//     getInfo.then (res =>setInfo (res))
-// } else
-
-// }
-
-// getInfo.then (res => setInfo (res))
-// useEffect (() => {
-//         getInfo ()
-//         .then(res => setInfo (res))
-//         .catch(err => console.log (err))
-//         }, [])
-
-
-
-// return (
-
-// <>
-//  <h1>{greetings}</h1>
-//  <ItemCount stock={8} />
-//  <ItemList listProducts={info}/>
-// </>
-
-// );
-// };
 
 export default ItemListContainer;

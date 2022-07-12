@@ -3,8 +3,8 @@ import { useState } from "react";
 import Swal from 'sweetalert2'
 // import Hello from "./Hello";
 
-function ItemCount ({stock}){
-    const [num,setNum] = useState (0);
+export const ItemCount = ({initial,stock,onAdd}) => {
+    const [num,setNum] = useState (initial);
 
     const sumar = () => {
         if ( num < stock ){
