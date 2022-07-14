@@ -1,14 +1,15 @@
-import { icon } from "@fortawesome/fontawesome-svg-core";
+
 import { useState } from "react";
+import './ItemCount.css'
 import Swal from 'sweetalert2'
 // import Hello from "./Hello";
 
 export const ItemCount = ({initial,stock,onAdd}) => {
-    const [num,setNum] = useState (initial);
+    const [quantity,setNum] = useState (initial);
 
     const sumar = () => {
-        if ( num < stock ){
-        setNum (num +1)
+        if ( quantity < stock ){
+        setNum (quantity +1)
     }
     else {
       Swal.fire({
@@ -22,7 +23,7 @@ export const ItemCount = ({initial,stock,onAdd}) => {
     }
     }
     const restar = () => {
-        setNum (num -1)
+        setNum (quantity -1)
     }
     const reiniciar = () => {
         setNum (0)
@@ -30,12 +31,14 @@ export const ItemCount = ({initial,stock,onAdd}) => {
 
     return (
         <>
-        <h3>{num}</h3>
+        <div className='counter'>
+        <h3>{quantity}</h3>
         <p> Productos disponibles {stock} unidades </p>
         <button onClick={sumar}> + </button>
         <button onClick={restar}> - </button> 
-        <button onClick={reiniciar}>Reiniciar</button> 
-        <button> {num > 0 ? `Agregar al Carrito` : `Elegi tus productos`}</button>              
+        <button onClick={reiniciar}>Reiniciar</button>
+        <button onClick={() => onAdd }> {quantity > 0 ? `Agregar al Carrito` : `Elegi tus productos`}</button>     
+        </div>         
         </>
     )
 

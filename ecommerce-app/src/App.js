@@ -1,12 +1,11 @@
 
 import './App.css';
-import Body from './components/Body/Body';
+import React from 'react';
 import NavBar from './components/NavBar/NavBar';
-import Welcome from './components/Welcome/welcome';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import CartProvider from './context/CartContext'
 
 
 function App() {
@@ -14,14 +13,13 @@ function App() {
     <>
       <BrowserRouter>
      <NavBar/>
-
+     <CartProvider>
      <Routes>
       <Route path='/' element = {  <ItemListContainer texto ={'Catalogo de Productos'}/>}/>
       <Route path='/categoria/:categoriaId' element = {  <ItemListContainer texto ={'Catalogo de Productos'}/>}/>
       <Route path='/detalle/:detalleId' element ={<ItemDetailContainer />}/>
-      <Route path='/item' element ={<Welcome name="Melina" />}/> 
-      
      </Routes>
+   </CartProvider>
 
      </BrowserRouter>
     </>  

@@ -1,6 +1,7 @@
 import './ItemDetailContainer.css'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import React , {useState,useEffect} from 'react'
+import { useParams } from 'react-router-dom';
 
 
 const product = {
@@ -13,6 +14,7 @@ description: 'Suave tela de algodon',
 }
 export const ItemDetailContainer = () =>{
     const [data,setData] = useState ({});
+    const params = useParams ()
     useEffect (() => {
         const getData = new Promise (resolve =>{
             setTimeout (()=> {
@@ -21,7 +23,7 @@ export const ItemDetailContainer = () =>{
 
             });
             getData.then (res => setData (res));
-            },[])
+            },[params.id])
 
  return (
         <ItemDetail data= {data} />
