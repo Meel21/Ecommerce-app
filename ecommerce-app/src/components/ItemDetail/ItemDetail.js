@@ -11,8 +11,6 @@ import { Link } from 'react-router-dom';
     const {addProduct} = useCartContext ();
     
     const onAdd = (quantity) => {
-     
-      
       setGoToCart (true);
       addProduct(data,quantity);
     }
@@ -27,7 +25,7 @@ import { Link } from 'react-router-dom';
         {
             goToCart
             ? <Link to='/cart'> Terminar compra </Link>
-            :<ItemCount initial= {1} stock= {8} onAdd={onAdd} />
+            :<ItemCount initial= {0} stock= {8} onAdd={onAdd} />
 
         }
 

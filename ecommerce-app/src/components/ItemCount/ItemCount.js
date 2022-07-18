@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useState } from "react";
 import './ItemCount.css'
 import Swal from 'sweetalert2'
@@ -37,7 +37,7 @@ export const ItemCount = ({initial,stock,onAdd}) => {
         <button onClick={sumar}> + </button>
         <button onClick={restar}> - </button> 
         <button onClick={reiniciar}>Reiniciar</button>
-        <button onClick={() => onAdd }> {quantity > 0 ? `Agregar al Carrito` : `Elegi tus productos`}</button>     
+        <button onClick={onAdd}> Agrega tus productos </button>     
         </div>         
         </>
     )
