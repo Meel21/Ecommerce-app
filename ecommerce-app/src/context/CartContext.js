@@ -15,11 +15,11 @@ const CartProvider = ({children}) => {
         setCart (newCart)
     }
 
-    const totalPrice = (id) => {
-        return cart.reduce ((prev,act) => prev + act.quantity * act.price,0)
+    const totalPrice = () => {
+        return cart.reduce ((prev,act) => prev + act.quantity * act.precio,0)
     }
 
-    const totalProducts = () => cart.reduce((acumulador,productosActual)=> acumulador + productosActual.quantity,0);
+    const totalProducts = () => cart.reduce ((acumulador,productosActual)=> acumulador + productosActual.quantity,0);
     const clearCart = () => setCart ([])
     
     const isInCart = (id) => cart.find (product => product.id === id) ? true : false;
