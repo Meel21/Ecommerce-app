@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './ItemCount.css'
 import Swal from 'sweetalert2'
-// import Hello from "./Hello";
+
 
 export const ItemCount = ({initial,stock,onAdd}) => {
     const [quantity,setNum] = useState (initial);

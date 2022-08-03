@@ -1,0 +1,83 @@
+const listProducts =[
+{   id: 1,    
+    title: 'Pollera Pails',
+    category: 'mujer',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 3000,
+    initial: 0,
+    stock:10
+},
+{   id: 2,    
+    title: 'Joggineta',
+    description: 'Joggin azul',
+    category: 'mujer',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 32000,
+    initial: 0,
+    stock:6
+},
+{   id: 3,    
+    title: 'Remera Vespertine',
+    description: 'Remera Rosa',
+    category: 'mujer',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Fucsia.webp?alt=media&token=63286159-1f2e-4a51-a02b-7ecdf6d2a0df',
+    precio: 3500,
+    initial: 0,
+    stock:4
+},
+{   id: 4,    
+    title: 'Remera Fantastic',
+    description: 'Tela jogger',
+    category: 'hombres',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 2300,
+    initial: 0,
+    stock:7
+},
+{   id: 5,    
+    title: 'Remera Osik',
+    description: 'Remera celeste',
+    category: 'mujer',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 4000,
+    initial: 0,
+    stock:3
+},
+{   id: 6,    
+    title: 'Comfy Kids',
+    category: 'niños',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 3600,
+    initial: 0,
+    stock:10
+},
+{   id: 7,    
+    title: 'Chelsea Rock',
+    description:'Chaleco Rosa',
+    category: 'niños',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 2000,
+    initial: 0,
+    stock:8
+},
+{   id: 8,    
+    title: 'Remera Marley',
+    description: 'Remera morley',
+    category: 'mujer',
+    image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+    precio: 2000,
+    initial: 0,
+    stock:10
+}
+,{   id: 9,    
+title: 'Remera Jordan',
+description:'Tela algodon',
+category: 'hombres',
+image: 'https://firebasestorage.googleapis.com/v0/b/ecommerce-app22.appspot.com/o/Remera%20Celeste.webp?alt=media&token=dd701165-1588-4d75-86f1-d982d326673e',
+precio: 3300,
+initial: 0,
+stock:8
+}
+]
+
+export default listProducts;
